@@ -14,4 +14,10 @@ app.get('/about', (req, res) => {
   res.send('<h1>About page</h1>');
 });
 
+app.get('/bad', (req, res) => {
+  res.send({
+    errorMessage: 'Unknown page'
+  });
+});
+
 app.listen(3000);

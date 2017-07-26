@@ -7,7 +7,11 @@ app.get('/', (req, res) => {
   res.send({
     name: "Bob",
     age: 34
-  }); 
+  });
+});
+
+app.get('/about', (req, res) => {
+  res.send('<h1>About page</h1>');
 });
 
 app.listen(3000);
